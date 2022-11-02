@@ -15,12 +15,6 @@ Voici la liste des trucs requis.
 
 [↑ Haut de page](#task-00)
 
-<style>
-  table {
-    width: 100%;
-  }
-</style>
-
 |                                   |                                   |                                   |
 | :---                              |               :---:               |                              ---: |
-| [← Task00](../task00/TASK00.md)   | [↩ Day00](../DAY00.md)            | [Task02 →](../task02/TASK02.md)   |
+| [← Task00](../task00/TASK00.md)   | [⏎ Day00](../DAY00.md)            | [Task02 →](../task02/TASK02.md)   |

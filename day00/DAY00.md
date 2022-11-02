@@ -18,12 +18,6 @@ Préparation de l'environement de la piscine
 
 [↑ Haut de page](#task-00)
 
-<style>
-  table {
-    width: 100%;
-  }
-</style>
-
 |                                   |                                   |                                   |
 | :---                              |               :---:               |                              ---: |
-| [← PEXP](#void)                   | [↩ PEXP](../PEXP.md)              | [Day01 →](../day01/DAY01.md)      |
+| [← PEXP](../PEXP.md)              | [⏎ PEXP](../PEXP.md)              | [Day01 →](../day01/DAY01.md)      |
