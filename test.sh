@@ -20,13 +20,15 @@ C_CYAN_L='\e[1;36m'
 C_WHITE_L='\e[1;37m'
 
 SCRIPT_DIR=`dirname ${0}`
-LOG_STDOUT="${SCRIPT_DIR}/log/stdout.txt"
-LOG_STDERR="${SCRIPT_DIR}/log/stderr.txt"
-LOG_DIFF="${SCRIPT_DIR}/log/diff.txt"
+LOG_DIR="${SCRIPT_DIR}/log"
+LOG_STDOUT="${LOG_DIR}/stdout.txt"
+LOG_STDERR="${LOG_DIR}/stderr.txt"
+LOG_DIFF="${LOG_DIR}/diff.txt"
 # /Constants
 
 
-echo -n "${C_YELLOW}TEST${C_RESET} ${C_CYAN}${PSCE_TEST_LABEL}${C_RESET}"
+mkdir -p "${LOG_DIR}"
+echo -ne "${C_YELLOW}TEST${C_RESET} ${C_CYAN}${PEXP_TEST_LABEL}${C_RESET}"
 
 
 # Command execution
@@ -36,9 +38,9 @@ $@ > "${LOG_STDOUT}" 2> "${LOG_STDERR}"
 # Command return status test
 if [[ "$?" -ne 0 ]]
 then
-  echo " ${C_RED}KO${C_RESET}"
-  echo ${C_MAGENTA}Command failed!${C_RESET}
-  echo "$@"
+  echo -e " ${C_RED}KO${C_RESET}"
+  echo -e ${C_MAGENTA}Command failed!${C_RESET}
+  echo -e "$@"
   sed "s>${SCRIPT_DIR}/>>" "${LOG_STDERR}"
   echo
   exit 1
@@ -46,25 +48,25 @@ fi
 
 
 # Diff test
-if [[ -n "${PSCE_TEST_EXPECTED_OUT}" ]]
+if [[ -n "${PEXP_TEST_EXPECTED_OUT}" ]]
 then
-  diff "${PSCE_TEST_EXPECTED_OUT}" "${LOG_STDOUT}" > "${LOG_DIFF}" 2>> "${LOG_STDERR}"
+  diff "${PEXP_TEST_EXPECTED_OUT}" "${LOG_STDOUT}" > "${LOG_DIFF}" 2>> "${LOG_STDERR}"
   STATUS="$?"
 
   if [[ "$STATUS" -eq 1 ]]
   then
-    echo " ${C_RED}KO${C_RESET}"
-    echo ${C_MAGENTA}Result missmatch!${C_RESET}
-    echo "< Attendu (${PSCE_TEST_EXPECTED_OUT})"
-    echo "> Obtenu  (${LOG_STDOUT})"
+    echo -e " ${C_RED}KO${C_RESET}"
+    echo -e ${C_MAGENTA}Result missmatch!${C_RESET}
+    echo -e "< Attendu (${PEXP_TEST_EXPECTED_OUT})"
+    echo -e "> Obtenu  (${LOG_STDOUT})"
     echo
     cat "${LOG_DIFF}"
     echo
     exit 2
   elif [[ "$STATUS" -eq 2 ]]
   then
-    echo " ${C_RED}KO${C_RESET}"
-    echo ${C_MAGENTA}diff exited with status code 2!${C_RESET}
+    echo -e " ${C_RED}KO${C_RESET}"
+    echo -e ${C_MAGENTA}diff exited with status code 2!${C_RESET}
     cat "${LOG_STDERR}"
     echo
     exit 2
@@ -72,4 +74,4 @@ then
 fi
 
 
-echo " ${C_GREEN}OK${C_RESET}"
+echo -e " ${C_GREEN}OK${C_RESET}"
