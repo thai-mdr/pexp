@@ -108,12 +108,6 @@ Et voici ce que l'on devrait voir. (le path peut varier)
 
 [↑ Haut de page](#task-00)
 
-<style>
-  table {
-    width: 100%;
-  }
-</style>
-
 |                                   |                                   |                                   |
 | :---                              |               :---:               |                              ---: |
-| [← Day00](#void)                  | [↩ Day00](../DAY00.md)            | [Task01 →](../task01/TASK01.md)   |
+| [← Day00](../DAY00.md)            | [⏎ Day00](../DAY00.md)            | [Task01 →](../task01/TASK01.md)   |
