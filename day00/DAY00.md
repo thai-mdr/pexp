@@ -2,11 +2,28 @@
 
 ## Introduction à PEXP
 
-Taches simples pour préparer l'environement de la piscine
+Préparation de l'environement de la piscine
 
-[00 - Prérequis pexp](./task00/TASK00.md)
+[task00 - Prérequis pexp](./task00/TASK00.md)
 
-[01 - Prérequis shell](./task00/TASK00.md)
+[task01 - Prérequis shell](./task00/TASK01.md)
 
-[02 - Prérequis express](./task00/TASK00.md)
+[task02 - Prérequis express](./task00/TASK00.md)
 
+<br/>
+
+---
+
+<br/>
+
+[↑ Haut de page](#task-00)
+
+<style>
+  table {
+    width: 100%;
+  }
+</style>
+
+|                                   |                                   |                                   |
+| :---                              |               :---:               |                              ---: |
+| [← PEXP](#void)                   | [↩ PEXP](../PEXP.md)              | [Day01 →](../day01/DAY01.md)      |

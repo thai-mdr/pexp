@@ -97,4 +97,23 @@ T2> ~/pexp/run.sh                 <-- vérifie que les tests des day précédent
 Pour cette TASK00 la seule chose à valider sera de lancer le script de test.  
 Et voici ce que l'on devrait voir. (le path peut varier)
 
-![](./task00_run.png)
+![task00](./task00_run.png)
+
+
+<br/>
+
+---
+
+<br/>
+
+[↑ Haut de page](#task-00)
+
+<style>
+  table {
+    width: 100%;
+  }
+</style>
+
+|                                   |                                   |                                   |
+| :---                              |               :---:               |                              ---: |
+| [← Day00](#void)                  | [↩ Day00](../DAY00.md)            | [Task01 →](../task01/TASK01.md)   |

@@ -4,6 +4,7 @@ set -e
 
 SCRIPT_DIR=`dirname ${0}`
 
+
 echo "+------------------------+"
 echo "|                        |"
 echo "|          DAY00         |"
