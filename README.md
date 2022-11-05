@@ -14,7 +14,7 @@
 ## Usage
 
 **Aucun** fichier n'est à `ajouter` / `modifier` / `suprimer` dans ce répo.
-Créez plutot un dossier à côté de celui-ci pour faire les exercices.
+Créez plutôt un dossier à côté de celui-ci pour faire les exercices.
 
 Exemple:
 ```
@@ -33,4 +33,4 @@ Exemple:
 ```
 
 
-Démarez maintenant avec [PEXP.md](./PEXP.md)
+Démarrez maintenant avec [PEXP.md](./PEXP.md)
