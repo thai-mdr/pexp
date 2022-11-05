@@ -22,11 +22,15 @@ Exemple:
 ├── pexp                    <-- Ce répo
 │   ├── README.md
 │   ├── PEXP.md
+│   ├── DAY00.md
+│   ├── DAY01.md
 │   ├── day00
-│   │   ├── README.md
+│   │   ├── TASK00.md
 │   │   └── task00
-│   │       └── README.md
 │   └── day01
-└── my-app                  <-- Tout votre travail se passe ici
+└── my-pexp                 <-- Tout votre travail se passe ici
     └── src
 ```
+
+
+Démarez maintenant avec [PEXP.md](./PEXP.md)
