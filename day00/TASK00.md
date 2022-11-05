@@ -110,4 +110,4 @@ Et voici ce que l'on devrait voir. (le path peut varier)
 
 |                                   |                                   |                                   |
 | :---                              |               :---:               |                              ---: |
-| [← Day00](../DAY00.md)            | [⏎ Day00](../DAY00.md)            | [Task01 →](../task01/TASK01.md)   |
+| [← Day00](../DAY00.md)            | [⏎ Day00](../DAY00.md)            | [Task01 →](./TASK01.md)   |

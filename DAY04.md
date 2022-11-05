@@ -1,14 +1,12 @@
-# Day 00
+# Day 04
 
-## Introduction à PEXP
+## ISR/SSR
 
 Préparation de l'environement de la piscine
 
-[task00 - Prérequis pexp](./task00/TASK00.md)
+[task00 - ISR](./day04/TASK00.md)
 
-[task01 - Prérequis shell](./task00/TASK01.md)
-
-[task02 - Prérequis express](./task00/TASK00.md)
+[task00 - SSR](./day04/TASK00.md)
 
 <br/>
 
@@ -20,4 +18,4 @@ Préparation de l'environement de la piscine
 
 |                                   |                                   |                                   |
 | :---                              |               :---:               |                              ---: |
-| [← PEXP](../PEXP.md)              | [⏎ PEXP](../PEXP.md)              | [Day01 →](../day01/DAY01.md)      |
+| [← Day03](./DAY03.md)             | [⏎ PEXP](../PEXP.md)              | [Day05 →](./DAY05.md)             |

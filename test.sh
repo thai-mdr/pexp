@@ -24,6 +24,7 @@ LOG_DIR="${SCRIPT_DIR}/log"
 LOG_STDOUT="${LOG_DIR}/stdout.txt"
 LOG_STDERR="${LOG_DIR}/stderr.txt"
 LOG_DIFF="${LOG_DIR}/diff.txt"
+LOG_TIME="${LOG_DIR}/time.txt"
 # /Constants
 
 
@@ -32,13 +33,14 @@ echo -ne "${C_YELLOW}TEST${C_RESET} ${C_CYAN}${PEXP_TEST_LABEL}${C_RESET}"
 
 
 # Command execution
-$@ > "${LOG_STDOUT}" 2> "${LOG_STDERR}"
+TIMEFMT='%S'
+{ time $@ > "${LOG_STDOUT}" 2> "${LOG_STDERR}" } 2> "${LOG_TIME}"
 
 
 # Command return status test
 if [[ "$?" -ne 0 ]]
 then
-  echo -e " ${C_RED}KO${C_RESET}"
+  echo -e " ${C_RED}KO${C_RESET}" `cat ${LOG_TIME}`
   echo -e ${C_MAGENTA}Command failed!${C_RESET}
   echo -e "$@"
   sed "s>${SCRIPT_DIR}/>>" "${LOG_STDERR}"
@@ -55,7 +57,7 @@ then
 
   if [[ "$STATUS" -eq 1 ]]
   then
-    echo -e " ${C_RED}KO${C_RESET}"
+    echo -e " ${C_RED}KO${C_RESET}" `cat ${LOG_TIME}`
     echo -e ${C_MAGENTA}Result missmatch!${C_RESET}
     echo -e "< Attendu (${PEXP_TEST_EXPECTED_OUT})"
     echo -e "> Obtenu  (${LOG_STDOUT})"
@@ -74,4 +76,4 @@ then
 fi
 
 
-echo -e " ${C_GREEN}OK${C_RESET}"
+echo -e " ${C_GREEN}OK${C_RESET}" `cat ${LOG_TIME}`

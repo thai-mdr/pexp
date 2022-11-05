@@ -6,6 +6,7 @@ Voici la liste des trucs requis.
 
 > [node](https://nodejs.org/en/) *`18.12.0 LTS`*  
 > [yarn](https://yarnpkg.com/) *`1.22.19`* OU [npm](https://www.npmjs.com/) *`8.19.2`*  
+> [curl](https://curl.se/) *`7.84.0`*
 
 <br/>
 
@@ -17,4 +18,4 @@ Voici la liste des trucs requis.
 
 |                                   |                                   |                                   |
 | :---                              |               :---:               |                              ---: |
-| [← Task00](../task00/TASK00.md)   | [⏎ Day00](../DAY00.md)            | [Task02 →](../task02/TASK02.md)   |
+| [← Task00](./TASK00.md)   | [⏎ Day00](../DAY00.md)            | [Task02 →](./TASK02.md)   |
