@@ -14,7 +14,7 @@
 ## Usage
 
 **Aucun** fichier n'est à `ajouter` / `modifier` / `suprimer` dans ce répo.
-Créez plutot un dossier à côté de celui-ci pour faire les exercices.
+Créez plutôt un dossier à côté de celui-ci pour faire les exercices.
 
 Exemple:
 ```
@@ -22,11 +22,15 @@ Exemple:
 ├── pexp                    <-- Ce répo
 │   ├── README.md
 │   ├── PEXP.md
+│   ├── DAY00.md
+│   ├── DAY01.md
 │   ├── day00
-│   │   ├── README.md
+│   │   ├── TASK00.md
 │   │   └── task00
-│   │       └── README.md
 │   └── day01
-└── my-app                  <-- Tout votre travail se passe ici
+└── my-pexp                 <-- Tout votre travail se passe ici
     └── src
 ```
+
+
+Démarrez maintenant avec [PEXP.md](./PEXP.md)
